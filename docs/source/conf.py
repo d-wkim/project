@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'Network Meta-Analysis'
+copyright = '2026, Dong Woon Kim'
+author = 'Dong Woon Kim'
 
 release = '0.1'
 version = '0.1.0'
@@ -19,6 +19,12 @@ extensions = [
     'sphinx.ext.intersphinx',
     'myst_parser'
 ]
+
+source_suffix = {
+    '.rst': 'restructuredtext',
+    '.txt': 'markdown',
+    '.md': 'markdown',
+}
 
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
