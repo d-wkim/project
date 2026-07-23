@@ -30,7 +30,6 @@ Eligibility criteria
 
 Systematic Review
 *****************
-Link to the `top, title`_.
 
 Protocol
 ========
