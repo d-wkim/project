@@ -1,17 +1,13 @@
-Welcome to Lumache's documentation!
-===================================
+Network Meta-Analysis
+=====================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+**Network Meta-Analysis** (/lu'make/) is a repository of python and R code that was used for the project (https://www.crd.york.ac.uk/PROSPERO/view/CRD42024592549) and (https://doi.org/doi:10.7910/DVN/NGIW6E).
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+Check out the :doc:`README` section for the code.
 
 .. note::
 
-   This project is under active development.
+   This project is under active development (documentation start date: 2026-07-23.
 
 Contents
 --------
