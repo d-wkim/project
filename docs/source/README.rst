@@ -11,161 +11,8 @@ Network Meta-Analysis
 Systematic Review
 =================
 
-
-   .. raw:: html
-
-      </h2>
-
-.. raw:: html
-
-   <!-- 4. Subtitle -->
-
-.. container::
-
-   .. raw:: html
-
-      <h4>
-
-   A systematic review and network meta-analysis
-
-   .. raw:: html
-
-      </h4>
-
-.. raw:: html
-
-   <hr style = "background-color:black; height: 1.5px;">
-
-.. container::
-
-   ::
-
-      <h6>A dissertation submitted in partial fulfillment of the requirements for the award of the degree of:</h6><h5>Doctor of Philosophy (Ph.D.)</h5><h6><i>submitted by:</i></h6><br>
-
-.. raw:: html
-
-   <!-- 5. Author -->
-
-.. container::
-
-   ::
-
-      <h4 size = 20><b>Dong Woon Kim, M.D.</b><sup>1,2,3</sup></h4>
-      <h6><i>dr n. med. Dong Woon Kim</i></h6></div><br>
-
-   .. raw:: html
-
-      <!-- 6. Supervisor -->
-
-   .. container::
-
-      .. raw:: html
-
-         <h6 style="font-family:Times New Roman;">
-
-      supervised by:
-
-      .. raw:: html
-
-         </div>
-
-      .. container::
-
-         Konrad Malinowski, M.D., Ph.D1,4
-
-      .. raw:: html
-
-         </div>
-
-      .. container::
-
-         .. raw:: html
-
-            <h6>
-
-         Kraków, 2026
-
-         .. raw:: html
-
-            </h6>
-
-      .. container::
-
-         .. container::
-
-            .. raw:: html
-
-               <p>
-
-            \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
-            .. raw:: html
-
-               </p>
-
-            ::
-
-               <font family = "Times New Roman" size = "1em">
-                   <sup>1</sup> Department of Anatomy, Jagiellonian University, Kraków, Poland  <br/>
-                   <sup>2</sup> Whiting College of Engineering, Johns Hopkins University, Baltimore, MD, United States  <br/>
-                   <sup>3</sup> Harvard University, Cambridge, MA, United States<br>
-                   <sup>4</sup> Artromedical Orthopedic Clinic, Bełchatów, Poland  
-               </font>
-
-.. code:: ipython3
-
-    import subprocess, sys, os, ssl, certifi, re
-    import pandas as pd
-    from Bio import Entrez, Medline
-    from src.custom_scripts import csv, markdown_to_html, df_to_markdown_table, static_badge, requirements, mkdir, icon
-    from src import search, search_strategy, deduplication
-    import src
-
-.. container::
-
-.. raw:: html
-
-   <h2 align="center" style="font-family:Times New Roman;font-variant:small-caps;">
-
-Systematic Review
-
-.. raw:: html
-
-   </h2>
-
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   <h2 align="center" style="font-family:Times New Roman;font-variant: small-caps;">
-
 Protocol
-
-.. raw:: html
-
-   </h2>
-
-.. raw:: html
-
-   <hr style="border: none; height: 0.5px; background-color: black;">
-
-.. container::
-
-   ::
-
-      <h3 align="left" style="font-family:Times New Roman;font-variant: small-caps;">Cochrane Reviews</h3>
-
-   .. raw:: html
-
-      <p style="font-size: 12px; font-family:Times New Roman;">
-
-   COCHRANEEMD-2026-00379
-
-   .. raw:: html
-
-      </p>
+--------
 
 **Research question**
 
@@ -295,22 +142,8 @@ developing osteoarthritis after ACLR.
 |   |              |                                                             |                    | studies        |
 +---+--------------+-------------------------------------------------------------+--------------------+----------------+
 
-.. container::
-
-.. raw:: html
-
-   <hr style="border: none; height: 1.5px; background-color: black;">
-
-.. raw:: html
-
-   <h2 align="center" style="font-family:Times New Roman;font-variant: small-caps;">
-
 Search Strategy
-
-.. raw:: html
-
-   </h2>
-
+---------------
 Search strategies were developed for randomized controlled trials:
 ``pm_bptb.txt``, ``pm_ht.txt``, ``pm_qt.txt``, ``pm_plt.txt``,
 ``pm_at.txt`` and ``pm_ta.txt`` corresponding to PubMed search
@@ -325,40 +158,8 @@ PubMed syntax to Embase and Web of Science syntax, store them into the
 global environment, and save them as plain text files for importing and
 use as queries for search.
 
-.. code:: ipython3
 
-    population = f"""(("pediatric"[tiab] OR "paediatric"[tiab] OR "adolescent"[tia) OR ("revision"[tiab] OR "repair"[tiab]))"""
-    acl = f"""("anterior cruciate ligament"[mh] OR "anterior cruciate ligament"[tiab] OR "anterior cruciate ligament reconstruction"[tiab] OR "acl"[tiab])"""
-    rct = f"""("randomized controlled trial"[pt] OR "randomized controlled trial"[tiab] OR "randomised controlled trial"[tiab])"""
-    reviews = f"""("review"[pt] OR "review"[tiab] OR "systematic review"[pt] OR "systematic review"[tiab] OR "meta-analysis"[pt] OR "meta-analysis"[tiab])"""
-    study_design = " NOT ".join([rct, reviews])
-    outcomes = f"""("ikdc"[tiab] OR "lysholm"[tiab] OR "tegner"[tiab] OR (("instrumental laxity"[tiab] OR "kt-1000"[tiab] OR "kt-2000"[tiab] OR "rolimeter"[tiab]) OR "pivot shift"[tiab] OR "lachman"[tiab]) OR ("graft failure"[tiab] OR "graft rupture"[tiab]))"""
-    
-    bptb = f"""("bone-patellar tendon-bone"[tiab] OR "bone patellar tendon bone"[tiab] OR "patellar tendon"[tiab] OR "bptb"[tiab])"""
-    ht = f"""("hamstring"[tiab] OR "hamstring tendon"[tiab] OR "semitendinosus"[tiab] OR "gracilis"[tiab])"""
-    qt = f"""("quadriceps"[tiab] OR "quadriceps tendon"[tiab] OR "qt"[tiab])"""
-    plt = f"""("peroneus"[tiab] OR "peroneus longus"[tiab] OR "fibularis longus"[tiab])"""
-    at = f"""("achilles"[tiab] OR "achilles tendon"[tiab])"""
-    ta = f"""("tibialis"[tiab] OR "tibialis anterior"[tiab] OR "tibialis posterior"[tiab])"""
-    
-    comparators = f"""{bptb} OR {ht} OR {qt} OR {plt} OR {at} OR {ta}"""
-    
-    df = pd.DataFrame({
-        " ": ["P", "I", "C", "O", "S"], #"", "", ""],
-        "Categories": ["Population", "Intervention", "Comparators", "Outcomes", "Study Design"], #"PubMed", "Embase", "Web of Science"],
-        "Patellar": [f"NOT {population}", f"{acl}", f"{bptb}", f"{outcomes}", f"{study_design}"], #f"{pm_bptb}", f"{em_bptb}", f"{wos_bptb}"],
-        "Hamstring": [f"NOT {population}", f"{acl}", f"{ht}", f"{outcomes}", f"{study_design}"], #f"{pm_ht}", f"{em_ht}", f"{wos_ht}"],
-        "Quadriceps": [f"NOT {population}", f"{acl}", f"{qt}", f"{outcomes}", f"{study_design}"], #f"{pm_qt}", f"{em_qt}", f"{wos_qt}"],
-        "Peroneus": [f"NOT {population}", f"{acl}", f"{plt}", f"{outcomes}", f"{study_design}"], #f"{pm_plt}", f"{em_plt}", f"{wos_plt}"],
-        "Achilles": [f"NOT {population}", f"{acl}", f"{at}", f"{outcomes}", f"{study_design}"], #f"{pm_at}", f"{em_at}", f"{wos_at}"],
-        "Tibialis": [f"NOT {population}", f"{acl}", f"{ta}", f"{outcomes}", f"{study_design}"], # f"{pm_ta}", f"{em_ta}", f"{wos_ta}"],
-    })
-    
-    df.to_csv("./data/search_strategies_1.csv", encoding = "utf-8")
-    from IPython.display import Markdown, display
-    display(Markdown(df.to_markdown(index = False)))
-
-
+**Table 2** Search strategies of each database search.
 
 +---+--------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+
 |   | Categories   | Patellar               | Hamstring              | Quadriceps             | Peroneus               | Achilles               | Tibialis               |
