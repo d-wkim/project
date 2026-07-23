@@ -1,58 +1,16 @@
-.. raw:: html
+=====================
+Network Meta-Analysis
+=====================
+:Info: Comparative analysis of outcome measures using the most commonly used graft harvesting sources in primary anterior cruciate ligament reconstruction surgery.
+:Revision: 
+:Description: Documentation for python code and scripts used in the project. Written in rST syntax and published `online <https://d-wkim-project.readthedocs.io/en/latest/README.html>`_.
 
-   <!-- Notes:
-
-   Read this and follow the steps to organize and stuff.
-   https://medium.com/@caneuenschwander/how-to-turn-a-messy-jupyter-notebook-into-a-professional-python-project-f34d5ee7f88b
+.. NOTE:: This is a note. 
 
 
+Systematic Review
+=================
 
-   -->
-
-.. container::
-
-.. container::
-
-.. raw:: html
-
-   <!-- 1. University Name (English) -->
-
-.. container::
-
-   .. raw:: html
-
-      <h5>
-
-   Jagiellonian UniversityMedical CollegeDoctoral School of Medical and
-   Health Sciences
-
-   .. raw:: html
-
-      </h5>
-
-.. raw:: html
-
-   <!-- 2. Logo -->
-
-.. container::
-
-.. raw:: html
-
-   <hr style = "background-color:gray; height: 1.5px;">
-
-.. raw:: html
-
-   <!-- 3. Title -->
-
-.. container::
-
-   .. raw:: html
-
-      <h2>
-
-   Comparative analysis of outcome measures usingthe most commonly used
-   graft harvesting sources in primary anterior cruciate ligament
-   reconstruction surgery.
 
    .. raw:: html
 
