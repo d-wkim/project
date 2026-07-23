@@ -16,15 +16,9 @@ extensions = [
     'sphinx.ext.doctest',
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
-    'sphinx.ext.intersphinx',
-    'myst_parser'
-]
+    'sphinx.ext.intersphinx'
+    ]
 
-source_suffix = {
-    '.rst': 'restructuredtext',
-    '.txt': 'markdown',
-    '.md': 'markdown',
-}
 
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
