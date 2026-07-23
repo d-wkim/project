@@ -1,5 +1,5 @@
 ===========================================================================================================================================================
-Comparative analysis of outcome measures using the most commonly used graft harvesting sources in primary anterior cruciate ligament reconstruction surgery, title
+Comparative analysis of outcome measures using the most commonly used graft harvesting sources in primary anterior cruciate ligament reconstruction surgery
 ===========================================================================================================================================================
 A systematic review and network meta-analysis
 ---------------------------------------------
@@ -7,6 +7,7 @@ A systematic review and network meta-analysis
     Dong Woon Kim, M.D.,
     Konrad Malinowski, M.D., Ph.D.
 :Version: 1.0.0 of 2026/23/07
+:Description: Documentation for python code and scripts used in the project. Written in rST syntax and published `online <https://d-wkim-project.readthedocs.io/en/latest/README.html>`_.
 
 .. contents:: Table of Contents
    :local:
@@ -26,12 +27,6 @@ Data sources
 
 Eligibility criteria
     Randomized controlled trials that compared the outcomes of at least two of the six grafts adult patients for primary anterior cruciate ligament reconstruction surgery were considered for inclusion. Furthermore, only those that reported on the most directly comparable outcomes were included in the analyses.
-
-:Authors: 
-:Description: Documentation for python code and scripts used in the project. Written in rST syntax and published `online <https://d-wkim-project.readthedocs.io/en/latest/README.html>`_.
-
-.. NOTE:: This is a note. 
-
 
 Systematic Review
 *****************
@@ -1145,11 +1140,7 @@ CSV.
    <h2 align="center" style="font-family:Times New Roman;font-variant: small-caps;">
 
 Deduplication
-
-.. raw:: html
-
-   </h2>
-
+=============
 The ‘gold-standard’ or consensus agreement among researchers seems to
 converge on the idea that removal of duplicate records is best performed
 in a process that involves three ordered stages. The first is
@@ -1164,11 +1155,6 @@ For the authors column, the last name of the first author was chosen to
 be used. For the year of publication, the year was extracted from the
 date of publication in the electronic version of the journal and
 converted into a string data structure.
-
-input file(s): ``records.csv``, output file(s):
-``doi_deduplicated.csv``, ``pmid_deduplicated.csv``,
-``title+author+year_deduplicated.csv``, and
-``title+year_deduplicated.csv``.
 
 .. code:: ipython3
 
