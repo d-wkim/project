@@ -1,13 +1,16 @@
 ===========================================================================================================================================================
-Comparative analysis of outcome measures using the most commonly used graft harvesting sources in primary anterior cruciate ligament reconstruction surgery
+Comparative analysis of outcome measures using the most commonly used graft harvesting sources in primary anterior cruciate ligament reconstruction surgery, title
 ===========================================================================================================================================================
 A systematic review and network meta-analysis
 ---------------------------------------------
+:Authors: 
+    Dong Woon Kim, M.D.,
+    Konrad Malinowski, M.D., Ph.D.
+:Version: 1.0.0 of 2026/23/07
 
 .. contents:: Table of Contents
    :local:
    :depth: 4
-
 
 
 **Abstract**
@@ -32,6 +35,7 @@ Eligibility criteria
 
 Systematic Review
 =================
+Link to the `top, title`_.
 
 Protocol
 --------
