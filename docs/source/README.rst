@@ -1,8 +1,24 @@
-=====================
-Network Meta-Analysis
-=====================
-:Info: Comparative analysis of outcome measures using the most commonly used graft harvesting sources in primary anterior cruciate ligament reconstruction surgery.
-:Revision: 
+===========================================================================================================================================================
+Comparative analysis of outcome measures using the most commonly used graft harvesting sources in primary anterior cruciate ligament reconstruction surgery
+===========================================================================================================================================================
+A systematic review and network meta-analysis
+---------------------------------------------
+
+**Abstract**
+
+Objective
+    The objective of this paper was to produce a comprehensive set of data that—by the use of network meta-analysis—forms both direct and indirect comparisons between the most commonly used grafts for primary anterior cruciate ligament reconstruction surgery in adult patients.
+
+Design
+    This paper is a follow-up and partially an update to a previously published systematic review and meta-analysis on the quadriceps tendon autograft. As a living systematic review, the intention is to also provide continuous updates to the publicly accessible datasets that were extracted and used for the analyses for future studies. In its present version, the paper includes five additional grafts as subgroups in a network meta-analysis.
+
+Data sources
+    Literature search was performed for each of the six graft types from three database sources: PubMed/MEDLINE, Embase, and Web of Science Core Collection. Citation/reference back-searching was performed on previously published systematic review and meta-analysis papers to catch any studies that may have been missed during the initial search.
+
+Eligibility criteria
+    Randomized controlled trials that compared the outcomes of at least two of the six grafts adult patients for primary anterior cruciate ligament reconstruction surgery were considered for inclusion. Furthermore, only those that reported on the most directly comparable outcomes were included in the analyses.
+
+:Authors: 
 :Description: Documentation for python code and scripts used in the project. Written in rST syntax and published `online <https://d-wkim-project.readthedocs.io/en/latest/README.html>`_.
 
 .. NOTE:: This is a note. 
