@@ -34,11 +34,11 @@ Eligibility criteria
 
 
 Systematic Review
-=================
+*****************
 Link to the `top, title`_.
 
 Protocol
---------
+========
 
 **Research question**
 
@@ -169,7 +169,8 @@ developing osteoarthritis after ACLR.
 +---+--------------+-------------------------------------------------------------+--------------------+----------------+
 
 Search Strategy
----------------
+===============
+
 Search strategies were developed for randomized controlled trials:
 ``pm_bptb.txt``, ``pm_ht.txt``, ``pm_qt.txt``, ``pm_plt.txt``,
 ``pm_at.txt`` and ``pm_ta.txt`` corresponding to PubMed search
@@ -617,11 +618,7 @@ use as queries for search.
    <h2 align="center" style="font-family:Times New Roman;font-variant:small-caps;">
 
 Search
-
-.. raw:: html
-
-   </h2>
-
+======
 A script to either create a search strategy using the terms, field tags,
 and Boolean operators and save them as plain text files or load already
 written and saved plain text files for import into the API search
@@ -636,7 +633,6 @@ and parses this into CSV files (``pm_bptb.csv``).
     from src import search
 
 .. code:: mermaid
-
    ---
    config:
      theme: light
