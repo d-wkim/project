@@ -11,7 +11,7 @@ A systematic review and network meta-analysis
 
 .. contents:: Table of Contents
    :local:
-   :depth: 4
+   :depth: 5
 
 
 **Abstract**
@@ -29,10 +29,10 @@ Eligibility criteria
     Randomized controlled trials that compared the outcomes of at least two of the six grafts adult patients for primary anterior cruciate ligament reconstruction surgery were considered for inclusion. Furthermore, only those that reported on the most directly comparable outcomes were included in the analyses.
 
 Systematic Review
-*****************
+#################
 
 Protocol
-========
+********
 
 **Research question**
 
@@ -163,7 +163,7 @@ developing osteoarthritis after ACLR.
 +---+--------------+-------------------------------------------------------------+--------------------+----------------+
 
 Search Strategy
-===============
+***************
 
 Search strategies were developed for randomized controlled trials:
 ``pm_bptb.txt``, ``pm_ht.txt``, ``pm_qt.txt``, ``pm_plt.txt``,
@@ -1139,7 +1139,7 @@ CSV.
    <h2 align="center" style="font-family:Times New Roman;font-variant: small-caps;">
 
 Deduplication
-=============
+*************
 The ‘gold-standard’ or consensus agreement among researchers seems to
 converge on the idea that removal of duplicate records is best performed
 in a process that involves three ordered stages. The first is
@@ -1227,10 +1227,10 @@ converted into a string data structure.
 
 
 Screening
-=========
+*********
 
 Title and abstract screening
-----------------------------
+============================
 
 .. code:: ipython3
 
