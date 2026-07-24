@@ -1226,32 +1226,11 @@ converted into a string data structure.
     908
 
 
-
-.. container::
-
-.. raw:: html
-
-   <h2 align="center" style="font-family:Times New Roman;font-variant: small-caps;">
-
 Screening
+=========
 
-.. raw:: html
-
-   </h2>
-
---------------
-
-.. raw:: html
-
-   <h3 align="center" style="font-family:Times New Roman;font-variant:small-caps;">
-
-Title abstract screening
-
-.. raw:: html
-
-   </h3>
-
-
+Title and abstract screening
+----------------------------
 
 .. code:: ipython3
 
@@ -1262,117 +1241,7 @@ Title abstract screening
     df = df.sort_values(by = ["Publication Year"], ascending = False)
     df = df.sort_values(by = ["Author"], ascending = True)
 
-.. code:: ipython3
-
     df_to_markdown_table(df)
-
-
-.. parsed-literal::
-
-    |     | DOI                              | Author                                                                                                                                        |   Publication Year |
-    |----:|:---------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|-------------------:|
-    |  67 | 10.1007/s00167-008-0645-4        | Ageberg E; Roos HP; Silbernagel KG; Thomeé R; Roos EM                                                                                         |               2009 |
-    |  83 | nan                              | Aglietti P; Giron F; Buzzi R; Biddau F; Sasso F                                                                                               |               2004 |
-    |  65 | 10.1007/s00167-009-0846-5        | Ahldén M; Kartus J; Ejerhed L; Karlsson J; Sernert N                                                                                          |               2009 |
-    |  37 | 10.1177/0363546516638387         | Akelman MR; Fadale PD; Hulstyn MJ; Shalvoy RM; Garcia A; Chin KE; Duryea J; Badger GJ; Tung GA; Fleming BC                                    |               2016 |
-    |  91 | 10.1177/03635465010290030201     | Anderson AF; Snyder RB; Lipscomb AB Jr                                                                                                        |               2001 |
-    |  15 | 10.1177/23259671231210035        | Anz AW; Jordan SE; Ostrander RV 3rd; Branch EA; Denney TS; Cohen A; Andrews JR                                                                |               2023 |
-    |  90 | 10.1177/03635465010290060901     | Aune AK; Holm I; Risberg MA; Jensen HK; Steen H                                                                                               |               2001 |
-    |  60 | 10.1177/0363546510369549         | Barenius B; Nordlander M; Ponzer S; Tidermark J; Eriksson K                                                                                   |               2010 |
-    |  48 | 10.1177/0363546514526139         | Barenius B; Ponzer S; Shalabi A; Bujak R; Norlén L; Eriksson K                                                                                |               2014 |
-    |  22 | 10.1007/s00402-020-03508-1       | Barié A; Sprinckstub T; Huber J; Jaber A                                                                                                      |               2020 |
-    |  89 | 10.2106/00004623-200209000-00001 | Beynnon BD; Johnson RJ; Fleming BC; Kannus P; Kaplan M; Samani J; Renström P                                                                  |               2002 |
-    |  32 | 10.1055/s-0038-1627466           | Bi M; Zhao C; Zhang S; Yao B; Hong Z; Bi Q                                                                                                    |               2018 |
-    |  36 | 10.1177/0363546516646378         | Björnsson H; Samuelsson K; Sundemo D; Desai N; Sernert N; Rostgård-Christensen L; Karlsson J; Kartus J                                        |               2016 |
-    |  40 | 10.1177/0363546515596406         | Bottoni CR; Smith EL; Shaha J; Shaha SS; Raybin SG; Tokish JM; Rowles DJ                                                                      |               2015 |
-    |  96 | 10.1053/jars.2000.18240          | Brand J Jr; Hamilton D; Selby J; Pienkowski D; Caborn DN; Johnson DL                                                                          |               2000 |
-    |   7 | 10.1177/23259671251320972        | Breker AN; Badger GJ; Kiapour AM; Costa MQ; Fleming EN; Ferrara SL; Chrostek CA; Fadale PD; Hulstyn MJ; Shalvoy RM; Gil HC; Fleming BC        |               2025 |
-    |  33 | 10.1016/j.aott.2017.02.011       | Buescu CT; Onutu AH; Lucaciu DO; Todor A                                                                                                      |               2017 |
-    |  11 | 10.1007/s00402-024-05639-1       | Butt U; Vuletic F; Shaikh MAA; Amanullah; Rehman GU; Shah IA; Stålman A; Khan ZA                                                              |               2024 |
-    |  10 | 10.1002/ksa.12583                | Calvert ND; Ebert JR; Radic R                                                                                                                 |               2025 |
-    |  98 | 10.1053/ar.1999.v15.0150161      | Carter TR; Edinger S                                                                                                                          |               1999 |
-    |   0 | 10.1016/j.jclinepi.2020.01.008   | Clark, Justin; Glasziou, Paul; Del Mar, Chris; Bannach-Brown, Alexandra; Stehlik, Paulina; Scott, Anna Mae                                    |               2020 |
-    |  29 | 10.1177/2325967118800298         | Covey DC; Sandoval KE; Riffenburgh RH                                                                                                         |               2018 |
-    |  16 | 10.1016/j.jisako.2022.04.002     | Cruz CA; Mannino BJ; Pike A; Thoma D; Lindell K; Kerbel YE; McCadden A; Lopez AJ; Bottoni CR                                                  |               2022 |
-    |  87 | 10.1177/03635465030310011401     | Ejerhed L; Kartus J; Sernert N; Köhler K; Karlsson J                                                                                          |               2003 |
-    |  95 | 10.1302/0301-620x.83b3.11685     | Eriksson K; Anderberg P; Hamberg P; Löfgren AC; Bredenberg M; Westman I; Wredmark T                                                           |               2001 |
-    |  92 | nan                              | Eriksson K; Anderberg P; Hamberg P; Olerud P; Wredmark T                                                                                      |               2001 |
-    |  86 | 10.1177/03635465030310041501     | Feller JA; Webster KE                                                                                                                         |               2003 |
-    |   9 | nan                              | García-Linage R; Lassard-Rosenthal J; Noval-García R; Muñiz-Madrazo A; Fraind-Maya G; Palmero-Picazo J; German-Córdoba I; Zimbrón-López D     |               2025 |
-    |  69 | 10.2106/JBJS.F.00385             | Gerber JP; Marcus RL; Dibble LE; Greis PE; Burks RT; LaStayo PC                                                                               |               2007 |
-    |  62 | 10.1016/j.knee.2009.09.008       | Ghalayini SR; Helm AT; Bonshahi AY; Lavender A; Johnson DS; Smith RB                                                                          |               2010 |
-    |  53 | 10.1007/s00167-012-1947-0        | Gifstad T; Sole A; Strand T; Uppheim G; Grøntvedt T; Drogset JO                                                                               |               2013 |
-    |  77 | 10.1007/s00167-006-0050-9        | Gobbi A; Francisco R                                                                                                                          |               2006 |
-    |  18 | 10.1177/23259671211028168        | Guglielmetti LGB; Salas VER; Jorge PB; Severino FR; Duarte A; de Oliveira VM; Cury RPL                                                        |               2021 |
-    |  76 | 10.1007/s00167-006-0059-0        | Harilainen A; Linko E; Sandelin J                                                                                                             |               2006 |
-    |  63 | 10.1007/s00167-009-0961-3        | Heijne A; Werner S                                                                                                                            |               2010 |
-    |  61 | 10.1177/0363546509350301         | Holm I; Oiestad BE; Risberg MA; Aune AK                                                                                                       |               2010 |
-    |  21 | 10.1007/s00402-021-03862-8       | Horstmann H; Petri M; Tegtbur U; Felmet G; Krettek C; Jagodzinski M                                                                           |               2022 |
-    |  80 | 10.1016/j.arthro.2004.12.002     | Ibrahim SA; Al-Kussary IM; Al-Misfer AR; Al-Mutairi HQ; Ghafar SA; El Noor TA                                                                 |               2005 |
-    |  35 | 10.1007/s00167-016-4229-4        | Iliopoulos E; Galanis N; Zafeiridis A; Iosifidis M; Papadopoulos P; Potoupnis M; Geladas N; Vrabas IS; Kirkos J                               |               2017 |
-    |  20 | 10.1007/s00167-021-06585-w       | Irrgang JJ; Tashman S; Patterson CG; Musahl V; West R; Oostdyk A; Galvin B; Poploski K; Fu FH                                                 |               2021 |
-    |  97 | 10.1007/s001670050166            | Jansson KA; Harilainen A; Sandelin J; Karjalainen PT; Aronen HJ; Tallroth K                                                                   |               1999 |
-    |  88 | 10.1177/03635465030310010501     | Jansson KA; Linko E; Sandelin J; Harilainen A                                                                                                 |               2003 |
-    |   5 | 10.1177/23259671251401596        | Johns WL; Voskeridjian A; Miltenberg B; Muchintala R; Dodson CC; Cohen SB; Salvo J; Sherman M; Ciccotti MG; Hammoud S                         |               2026 |
-    |  46 | 10.1007/s00264-014-2495-7        | Kautzner J; Kos P; Hanus M; Trc T; Havlas V                                                                                                   |               2015 |
-    | 100 | nan                              | Kohn D                                                                                                                                        |               1990 |
-    |  19 | 10.1007/s00402-021-04195-2       | Komzák M; Hart R; Náhlík D; Vysoký R                                                                                                          |               2022 |
-    |  38 | 10.1007/s00402-015-2386-4        | Konrads C; Reppenhagen S; Plumhoff P; Hoberg M; Rudert M; Barthel T                                                                           |               2016 |
-    |  66 | nan                              | Laoruengthana A; Pattayakorn S; Chotanaputhi T; Kosiyatrakul A                                                                                |               2009 |
-    |  51 | 10.1016/j.arthro.2012.05.010     | Lawhorn KW; Howell SM; Traina SM; Gottlieb JE; Meade TD; Freedberg HI                                                                         |               2012 |
-    |  82 | 10.1016/j.arthro.2004.09.014     | Laxdal G; Kartus J; Hansson L; Heidvall M; Ejerhed L; Karlsson J                                                                              |               2005 |
-    |  47 | 10.1007/s00508-014-0550-4        | Leitgeb J; Köttstorfer J; Schuster R; Kovar FM; Platzer P; Aldrian S                                                                          |               2014 |
-    |  42 | 10.1016/j.arthro.2015.02.033     | Li J; Wang J; Li Y; Shao D; You X; Shen Y                                                                                                     |               2015 |
-    |  70 | 10.1177/0363546506298275         | Lidén M; Ejerhed L; Sernert N; Laxdal G; Kartus J                                                                                             |               2007 |
-    |  26 | 10.1136/bjsports-2019-101000     | Lind M; Nielsen TG; Soerensen OG; Mygind-Klavsen B; Faunø P                                                                                   |               2020 |
-    |   8 | 10.1177/23259671241302348        | Lucidi GA; Agostinone P; Di Paolo S; Dal Fabbro G; Serra M; Viotto M; Grassi A; Zaffagnini S                                                  |               2025 |
-    |  52 | 10.1016/j.knee.2012.02.005       | Lui PP; Cheng YY; Yung SH; Hung AS; Chan KM                                                                                                   |               2012 |
-    |  49 | 10.1016/j.arthro.2014.01.012     | Lund B; Nielsen T; Faunø P; Christiansen SE; Lind M                                                                                           |               2014 |
-    |  72 | 10.1177/0363546506294361         | Maletis GB; Cameron SL; Tengan JJ; Burchette RJ                                                                                               |               2007 |
-    |   2 | 10.13107/jocr.2026.v16.i05.7294  | Malik S; Biswas G; Singh SK; Sundaresan N; Bera AP; Kyada M                                                                                   |               2026 |
-    |  14 | 10.1002/ksa.12031                | Martin RK; Marmura H; Wastvedt S; Pareek A; Persson A; Moatshe G; Bryant D; Wolfson J; Engebretsen L; Getgood A                               |               2024 |
-    |  27 | 10.1016/j.aott.2019.04.012       | Martin-Alguacil JL; Arroyo-Morales M; Martin-Gómez JL; Lozano-Lozano M; Galiano-Castillo N; Cantarero-Villanueva I                            |               2019 |
-    |  30 | 10.1016/j.knee.2018.03.011       | Martin-Alguacil JL; Arroyo-Morales M; Martín-Gomez JL; Monje-Cabrera IM; Abellán-Guillén JF; Esparza-Ros F; Lozano ML; Cantarero-Villanueva I |               2018 |
-    |  78 | 10.1177/0363546505279919         | Matsumoto A; Yoshiya S; Muratsu H; Yagi M; Iwasaki Y; Kurosaka M; Kuroda R                                                                    |               2006 |
-    |  75 | 10.1016/j.arthro.2006.05.004     | McCormack RG; Greenhow RJ; Fogagnolo F; Shrier I                                                                                              |               2006 |
-    |  50 | 10.2106/JBJS.L.00724             | Mohammadi F; Salavati M; Akhbari B; Mazaheri M; Mohsen Mir S; Etemadi Y                                                                       |               2013 |
-    |  43 | 10.1097/JSM.0000000000000202     | Mohtadi N; Barber R; Chan D; Paolucci EO                                                                                                      |               2016 |
-    |  41 | 10.1097/JSM.0000000000000209     | Mohtadi N; Chan D; Barber R; Paolucci EO                                                                                                      |               2016 |
-    |  28 | 10.2106/JBJS.18.01322            | Mohtadi NG; Chan DS                                                                                                                           |               2019 |
-    |  59 | 10.1016/j.gaitpost.2010.04.008   | Moraiti CO; Stergiou N; Vasiliadis HS; Motsis E; Georgoulis A                                                                                 |               2010 |
-    |  44 | 10.1007/s00264-014-2662-x        | Mouzopoulos G; Siebold R; Tzurbakis M                                                                                                         |               2015 |
-    |  56 | 10.1007/s00167-010-1388-6        | Noh JH; Yi SR; Song SJ; Kim SW; Kim W                                                                                                         |               2011 |
-    |  84 | 10.1177/0363546503261703         | Nurmi JT; Kannus P; Sievänen H; Järvelä T; Järvinen M; Järvinen TL                                                                            |               2004 |
-    |  99 | nan                              | O'Neill DB                                                                                                                                    |               1996 |
-    |  45 | 10.1007/s00264-014-2513-9        | Papalia R; Franceschi F; Tecame A; D'Adamio S; Maffulli N; Denaro V                                                                           |               2015 |
-    |  81 | nan                              | Pigozzi F; Di Salvo V; Parisi A; Giombini A; Fagnani F; Magini W; Franceschi F; Denaro E                                                      |               2004 |
-    |  71 | 10.1177/0363546506296042         | Pinczewski LA; Lyman J; Salmon LJ; Russell VJ; Roe J; Linklater J                                                                             |               2007 |
-    |  13 | 10.1177/03635465241271524        | Popovic M; Myhre JR; Holen JIH; Gifstad T; Strand IL; Strand T; Mo IF; Fischer-Bredenbeck C; Drogset JO                                       |               2024 |
-    |  58 | 10.1007/s00113-010-1791-y        | Pässler HH                                                                                                                                    |               2010 |
-    |  93 | 10.1007/s001130050733            | Röpke M; Becker R; Urbach D; Nebelung W                                                                                                       |               2001 |
-    |  54 | 10.1177/0363546511411702         | Sajovic M; Strahovnik A; Dernovsek MZ; Skaza K                                                                                                |               2011 |
-    |  68 | 10.1007/s00264-007-0341-x        | Sajovic M; Strahovnik A; Komadina R; Dernovsek MZ                                                                                             |               2008 |
-    |  31 | 10.1177/0363546518768768         | Sajovic M; Stropnik D; Skaza K                                                                                                                |               2018 |
-    |  73 | 10.1177/0363546506290726         | Sajovic M; Vengust V; Komadina R; Tavcar R; Skaza K                                                                                           |               2006 |
-    |  79 | 10.1007/s00264-005-0011-9        | Sato N; Higuchi H; Terauchi M; Kimura M; Takagishi K                                                                                          |               2005 |
-    |  24 | 10.1007/s40279-020-01276-x       | Sinding KS; Nielsen TG; Hvid LG; Lind M; Dalgas U                                                                                             |               2020 |
-    |  25 | 10.1016/j.arthro.2020.01.048     | Smith PA; Cook CS; Bley JA                                                                                                                    |               2020 |
-    |   4 | 10.1016/j.lanepe.2025.101561     | Sonnery-Cottet B; Carrozzo A; Poilvache H; Fayard JM; Freychet B; Thaunat M; Vieira TD; Saithna A                                             |               2026 |
-    |  23 | 10.1177/2325967120918490         | Sonnery-Cottet B; Pioger C; Vieira TD; Franck F; Kajetanek C; Fayard JM; Thaunat M; Saithna A                                                 |               2020 |
-    |  12 | 10.1177/23259671241292604        | Sumanont S; Jaruwanneechai K; Wittayapairoj A; Apiwatanakul P; Boonrod A                                                                      |               2024 |
-    |  17 | 10.1007/s00590-023-03636-5       | Tang N; Eren M; Gurpinar T; Ozturkmen Y                                                                                                       |               2024 |
-    |  64 | 10.1177/0363546509339577         | Taylor DC; DeBerardino TM; Nelson BJ; Duffey M; Tenuta J; Stoneman PD; Sturdivant RX; Mountcastle S                                           |               2009 |
-    |  85 | 10.1055/s-2003-42153             | Tibesku CO; Springer J; Mastrokalos DS; Pässler HH                                                                                            |               2003 |
-    |   3 | 10.1002/ksa.70275                | Vendrig T; Keizer MNJ; Brouwer RW; Houdijk H; Hoogeslag RAG                                                                                   |               2026 |
-    |  34 | 10.1016/j.arthro.2016.05.043     | Wasserman BR; Singh BC; Kaplan DJ; Weinberg M; Meislin R; Jazrawi LM; Strauss EJ                                                              |               2017 |
-    |  94 | 10.1007/s001670100191            | Webster KE; Feller JA; Hameister KA                                                                                                           |               2001 |
-    |  55 | 10.1016/j.arthro.2011.01.015     | Wipfler B; Donner S; Zechmann CM; Springer J; Siebold R; Paessler HH                                                                          |               2011 |
-    |   6 | 10.1007/s00590-025-04510-2       | Yadav AK; Sharma A; Paul N; Bhakhar A; Sarkar B; Azam MQ                                                                                      |               2025 |
-    |   1 | 10.1007/s00264-019-04417-8       | Yang, Xiong-gang; Wang, Feng; He, Xin; Feng, Jiang-tao; Hu, Yong-cheng; Zhang, Hao; Yang, Li; Hua, Kunchi                                     |               2020 |
-    |  39 | 10.1007/s00167-015-3955-3        | Yoo SH; Song EK; Shin YR; Kim SK; Seon JK                                                                                                     |               2017 |
-    |  57 | 10.1007/s00167-010-1225-y        | Zaffagnini S; Bruni D; Marcheggiani Muccioli GM; Bonanzinga T; Lopomo N; Bignozzi S; Marcacci M                                               |               2011 |
-    |  74 | 10.1007/s00167-006-0130-x        | Zaffagnini S; Marcacci M; Lo Presti M; Giordano G; Iacono F; Neri MP                                                                          |               2006 |
-    
 
 
 +-----+----------------------------------+-------------------------------------------------+-------------+
