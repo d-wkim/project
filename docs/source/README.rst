@@ -14,6 +14,28 @@ A systematic review and network meta-analysis
    :depth: 5
 
 
+.. raw:: html
+   
+   <p align = "center">
+    Jagiellonian University<br>
+    Medical College<br>
+    Doctoral School of Medical and Health Sciences</p>
+
+    <div  align="center" ><a href="https://github.com/d-wkim/phd"><img alt = "" src="https://raw.githubusercontent.com/d-wkim/assets/refs/heads/main/icons/uj_black.jpg" width="100" height="150"></a></div>
+
+   <h2 align="center">
+    Comparative analysis of outcome measures using the most commonly used graft harvesting sources in primary anterior cruciate ligament reconstruction surgery.<br>
+    A systematic review and network meta-analysis
+   </h2>
+   <p align = "center">
+    <sub>A dissertation submitted in partial fulfillment of the requirements for the award of the degree of:</sub><br><br>
+    Doctor of Philosophy (Ph.D.)<br><br>
+    <sup>submitted by:</sup><br>
+    <strong>Dong Woon Kim</strong>, M.D.
+   </p>
+   
+
+
 **Abstract**
 
 Objective
