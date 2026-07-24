@@ -602,17 +602,8 @@ use as queries for search.
 |      |            |                        |                        | controlled trial)))    |                        |
 +------+------------+------------------------+------------------------+------------------------+------------------------+
 
-
-.. raw:: html
-
-   <hr style="border: none; height: 1.5px; background-color: black;">
-
-.. raw:: html
-
-   <h2 align="center" style="font-family:Times New Roman;font-variant:small-caps;">
-
 Search
-======
+******
 A script to either create a search strategy using the terms, field tags,
 and Boolean operators and save them as plain text files or load already
 written and saved plain text files for import into the API search
